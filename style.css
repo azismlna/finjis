@@ -40,12 +40,14 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-  @media (max-width: 768px) {
-    flex-direction: column; /* Menu navigasi jadi vertikal */
-    gap: 10px;
-    padding: 0;
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Sembunyikan menu */
   }
-}
+
+  nav.active ul {
+    display: block; /* Tampilkan menu saat tombol diklik */
+  }
 }
 
 nav ul li {
